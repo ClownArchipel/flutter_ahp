@@ -1,0 +1,21 @@
+{
+    "modules": [
+        "login",
+        "dashboard",
+        "master_kost",
+        "input_master_kost",
+        "master_kriteria",
+        "setting_kriteria",
+        "perhitungan",
+        "rekomendasi_pilihan"
+    ],
+    "module_directory_name": "module",
+    "experimental_mode": false,
+    "learning_mode": false,
+    "unfreezed": true,
+    "use_cubit": false,
+    "ignore_core_generator_for_directories": [
+        "lib/model",
+        "lib/models"
+    ]
+}
