@@ -36,12 +36,12 @@ class MasterKostView extends StatelessWidget {
               backgroundColor: MyColor.mainCol,
             ),
             drawer: const MyDrawer(),
-            floatingActionButton: FloatingActionButton(
-              child: const Icon(Icons.add),
-              onPressed: () {
-                controller.wantToAdd();
-              },
-            ),
+            // floatingActionButton: FloatingActionButton(
+            //   child: const Icon(Icons.add),
+            //   onPressed: () {
+            //     controller.wantToAdd();
+            //   },
+            // ),
             body: Obx(() {
               if (controller.kostList.isEmpty) {
                 return const Center(child: CircularProgressIndicator());
@@ -63,13 +63,17 @@ class MasterKostView extends StatelessWidget {
                                 }),
                                 headingTextStyle:
                                     const TextStyle(color: Colors.white),
-                                minWidth: 950,
+                                minWidth: 1050,
                                 columns: const [
                                   DataColumn2(
                                       label: Text('No.'), fixedWidth: 40),
                                   DataColumn2(
                                     label: Text('Name'),
                                     fixedWidth: 150,
+                                  ),
+                                  DataColumn2(
+                                    label: Text('Tipe'),
+                                    fixedWidth: 120,
                                   ),
                                   DataColumn2(
                                     label: Text('Address'),
@@ -87,6 +91,10 @@ class MasterKostView extends StatelessWidget {
                                     label: Text('Fasilitas'),
                                   ),
                                   DataColumn2(
+                                    label: Text('Jarak (Km)'),
+                                    fixedWidth: 80,
+                                  ),
+                                  DataColumn2(
                                     label: Text('Rating'),
                                   ),
                                   DataColumn2(
@@ -99,25 +107,28 @@ class MasterKostView extends StatelessWidget {
                                         cells: [
                                           DataCell(Text(kost['id'].toString())),
                                           DataCell(Text(kost['name'])),
+                                          DataCell(Text(kost['type'])),
                                           DataCell(Text(kost['address'])),
                                           DataCell(Text(
                                               'Rp.${priceFormatter.format(double.parse(kost['price']))}')),
-                                          DataCell(Text(kost['facility']
-                                              .toString())),
                                           DataCell(Text(
                                               kost['room_size'].toString())),
+                                          DataCell(Text(
+                                              kost['facility'].toString())),
+                                          DataCell(Text(
+                                              kost['distance'].toString())),
                                           DataCell(Text(kost['rating'])),
                                           DataCell(Row(
                                             children: [
-                                              IconButton(
-                                                  onPressed: () {
-                                                    controller
-                                                        .wantToEdit(kost['id']);
-                                                  },
-                                                  icon: const Icon(
-                                                    Icons.edit,
-                                                    color: Colors.blue,
-                                                  )),
+                                              // IconButton(
+                                              //     onPressed: () {
+                                              //       controller
+                                              //           .wantToEdit(kost['id']);
+                                              //     },
+                                              //     icon: const Icon(
+                                              //       Icons.edit,
+                                              //       color: Colors.blue,
+                                              //     )),
                                               IconButton(
                                                   onPressed: () {
                                                     controller

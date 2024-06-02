@@ -7,6 +7,7 @@ class Kost {
     String price;
     int facility;
     int roomSize;
+    double distance;
     String rating;
     DateTime createdAt;
     DateTime updatedAt;
@@ -18,6 +19,7 @@ class Kost {
         required this.price,
         required this.facility,
         required this.roomSize,
+        required this.distance,
         required this.rating,
         required this.createdAt,
         required this.updatedAt,
@@ -34,6 +36,7 @@ class Kost {
         price: json["price"],
         facility: json["facility"],
         roomSize: json["room_size"],
+        distance: json["distance"],
         rating: json["rating"],
         createdAt: DateTime.parse(json["created_at"]),
         updatedAt: DateTime.parse(json["updated_at"]),
@@ -46,6 +49,7 @@ class Kost {
         "price": price,
         "facility": facility,
         "room_size": roomSize,
+        "distance": distance,
         "rating": rating,
         "created_at": createdAt.toIso8601String(),
         "updated_at": updatedAt.toIso8601String(),

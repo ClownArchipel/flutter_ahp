@@ -56,68 +56,109 @@ class PerhitunganView extends StatelessWidget {
                             margin: const EdgeInsets.all(20),
                             child: Card(
                               child: DataTable2(
-                                headingRowColor:
-                                    MaterialStateProperty.resolveWith((states) {
-                                  return Colors.black;
-                                }),
-                                headingTextStyle:
-                                    const TextStyle(color: Colors.white),
-                                columnSpacing: 2,
-                                horizontalMargin: 10,
-                                // fixedLeftColumns: 1,
-                                minWidth: 260,
-                                columns: const [
-                                  DataColumn2(
-                                      label: Text('Kriteria.'), fixedWidth: 80),
-                                  DataColumn2(
-                                    label: Text('K1'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K2'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K3'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K4'),
-                                    fixedWidth: 50,
-                                  ),
-                                ],
-                                rows:[
-                                  DataRow(cells: [
-                                    const DataCell(Text('K1')),
-                                    DataCell(Text(controller.perhiList[0][0].toString())),
-                                    DataCell(Text(controller.perhiList[1][0].toString())),
-                                    DataCell(Text(controller.perhiList[2][0].toString())),
-                                    DataCell(Text(controller.perhiList[3][0].toString())),
+                                  headingRowColor:
+                                      MaterialStateProperty.resolveWith(
+                                          (states) {
+                                    return Colors.black;
+                                  }),
+                                  headingTextStyle:
+                                      const TextStyle(color: Colors.white),
+                                  columnSpacing: 2,
+                                  horizontalMargin: 10,
+                                  fixedLeftColumns: 1,
+                                  minWidth: 330,
+                                  columns: const [
+                                    DataColumn2(
+                                        label: Text('Kriteria.'),
+                                        fixedWidth: 73),
+                                    DataColumn2(
+                                      label: Text('K1'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K2'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K3'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K4'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K5'),
+                                      fixedWidth: 50,
+                                    ),
+                                  ],
+                                  rows: [
+                                    DataRow(cells: [
+                                      const DataCell(Text('K1')),
+                                      DataCell(Text(controller.perhiList[0][0]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[1][0]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[2][0]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[3][0]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[4][0]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K2')),
+                                      DataCell(Text(controller.perhiList[0][1]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[1][1]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[2][1]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[3][1]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[4][1]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K3')),
+                                      DataCell(Text(controller.perhiList[0][2]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[1][2]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[2][2]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[3][2]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[4][2]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K4')),
+                                      DataCell(Text(controller.perhiList[0][3]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[1][3]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[2][3]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[3][3]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[4][3]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K5')),
+                                      DataCell(Text(controller.perhiList[0][4]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[1][4]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[2][4]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[3][4]
+                                          .toString())),
+                                      DataCell(Text(controller.perhiList[4][4]
+                                          .toString())),
+                                    ]),
                                   ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K2')),
-                                    DataCell(Text(controller.perhiList[0][1].toString())),
-                                    DataCell(Text(controller.perhiList[1][1].toString())),
-                                    DataCell(Text(controller.perhiList[2][1].toString())),
-                                    DataCell(Text(controller.perhiList[3][1].toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K3')),
-                                    DataCell(Text(controller.perhiList[0][2].toString())),
-                                    DataCell(Text(controller.perhiList[1][2].toString())),
-                                    DataCell(Text(controller.perhiList[2][2].toString())),
-                                    DataCell(Text(controller.perhiList[3][2].toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K4')),
-                                    DataCell(Text(controller.perhiList[0][3].toString())),
-                                    DataCell(Text(controller.perhiList[1][3].toString())),
-                                    DataCell(Text(controller.perhiList[2][3].toString())),
-                                    DataCell(Text(controller.perhiList[3][3].toString())),
-                                  ]),
-                                ]
-                                    
-                              ),
                             ),
                           ),
                         )),
@@ -132,83 +173,187 @@ class PerhitunganView extends StatelessWidget {
                             margin: const EdgeInsets.all(20),
                             child: Card(
                               child: DataTable2(
-                                headingRowColor:
-                                    MaterialStateProperty.resolveWith((states) {
-                                  return Colors.black;
-                                }),
-                                headingTextStyle:
-                                    const TextStyle(color: Colors.white),
-                                columnSpacing: 2,
-                                horizontalMargin: 10,
-                                fixedLeftColumns: 1,
-                                minWidth: 700,
-                                columns: const [
-                                  DataColumn2(
-                                      label: Text('Kriteria.'), fixedWidth: 80),
-                                  DataColumn2(
-                                    label: Text('K1'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K2'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K3'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K4'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('Jumlah'),
-                                    fixedWidth: 60,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('Prioritas'),
-                                    fixedWidth: 50,
-                                  ),
-                                ],
-                                 rows:[
-                                  DataRow(cells: [
-                                    const DataCell(Text('K1')),
-                                    DataCell(Text(controller.jmlnilaiList[0][0].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[1][0].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[2][0].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[3][0].toString())),
-                                    DataCell(Text((controller.jmlnilaiList[0][0]+controller.jmlnilaiList[1][0]+controller.jmlnilaiList[2][0]+controller.jmlnilaiList[3][0]).toString())),
-                                    DataCell(Text(controller.prioritasList[0].toString())),
+                                  headingRowColor:
+                                      MaterialStateProperty.resolveWith(
+                                          (states) {
+                                    return Colors.black;
+                                  }),
+                                  headingTextStyle:
+                                      const TextStyle(color: Colors.white),
+                                  columnSpacing: 2,
+                                  horizontalMargin: 10,
+                                  fixedLeftColumns: 1,
+                                  minWidth: 700,
+                                  columns: const [
+                                    DataColumn2(
+                                        label: Text('Kriteria.'),
+                                        fixedWidth: 70),
+                                    DataColumn2(
+                                      label: Text('K1'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K2'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K3'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K4'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K5'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('Jumlah'),
+                                      fixedWidth: 60,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('Prioritas'),
+                                      fixedWidth: 50,
+                                    ),
+                                  ],
+                                  rows: [
+                                    DataRow(cells: [
+                                      const DataCell(Text('K1')),
+                                      DataCell(Text(controller.jmlnilaiList[0]
+                                              [0]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[1]
+                                              [0]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[2]
+                                              [0]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[3]
+                                              [0]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[4]
+                                              [0]
+                                          .toString())),
+                                      DataCell(Text((controller.jmlnilaiList[0]
+                                                  [0] +
+                                              controller.jmlnilaiList[1][0] +
+                                              controller.jmlnilaiList[2][0] +
+                                              controller.jmlnilaiList[3][0] +
+                                              controller.jmlnilaiList[4][0])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[0]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K2')),
+                                      DataCell(Text(controller.jmlnilaiList[0]
+                                              [1]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[1]
+                                              [1]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[2]
+                                              [1]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[3]
+                                              [1]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[4]
+                                              [1]
+                                          .toString())),
+                                      DataCell(Text((controller.jmlnilaiList[0]
+                                                  [1] +
+                                              controller.jmlnilaiList[1][1] +
+                                              controller.jmlnilaiList[2][1] +
+                                              controller.jmlnilaiList[3][1] +
+                                              controller.jmlnilaiList[4][1])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[1]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K3')),
+                                      DataCell(Text(controller.jmlnilaiList[0]
+                                              [2]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[1]
+                                              [2]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[2]
+                                              [2]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[3]
+                                              [2]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[4]
+                                              [2]
+                                          .toString())),
+                                      DataCell(Text((controller.jmlnilaiList[0]
+                                                  [2] +
+                                              controller.jmlnilaiList[1][2] +
+                                              controller.jmlnilaiList[2][2] +
+                                              controller.jmlnilaiList[3][2] +
+                                              controller.jmlnilaiList[4][2])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[2]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K4')),
+                                      DataCell(Text(controller.jmlnilaiList[0]
+                                              [3]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[1]
+                                              [3]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[2]
+                                              [3]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[3]
+                                              [3]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[4]
+                                              [3]
+                                          .toString())),
+                                      DataCell(Text((controller.jmlnilaiList[0]
+                                                  [3] +
+                                              controller.jmlnilaiList[1][3] +
+                                              controller.jmlnilaiList[2][3] +
+                                              controller.jmlnilaiList[3][3] +
+                                              controller.jmlnilaiList[4][3])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[3]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K5')),
+                                      DataCell(Text(controller.jmlnilaiList[0]
+                                              [4]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[1]
+                                              [4]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[2]
+                                              [4]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[3]
+                                              [4]
+                                          .toString())),
+                                      DataCell(Text(controller.jmlnilaiList[4]
+                                              [4]
+                                          .toString())),
+                                      DataCell(Text((controller.jmlnilaiList[0]
+                                                  [4] +
+                                              controller.jmlnilaiList[1][4] +
+                                              controller.jmlnilaiList[2][4] +
+                                              controller.jmlnilaiList[3][4] +
+                                              controller.jmlnilaiList[4][4])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[4]
+                                          .toString())),
+                                    ]),
                                   ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K2')),
-                                    DataCell(Text(controller.jmlnilaiList[0][1].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[1][1].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[2][1].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[3][1].toString())),
-                                    DataCell(Text((controller.jmlnilaiList[0][1]+controller.jmlnilaiList[1][1]+controller.jmlnilaiList[2][1]+controller.jmlnilaiList[3][1]).toString())),
-                                    DataCell(Text(controller.prioritasList[1].toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K3')),
-                                    DataCell(Text(controller.jmlnilaiList[0][2].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[1][2].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[2][2].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[3][2].toString())),
-                                    DataCell(Text((controller.jmlnilaiList[0][2]+controller.jmlnilaiList[1][2]+controller.jmlnilaiList[2][2]+controller.jmlnilaiList[3][2]).toString())),
-                                    DataCell(Text(controller.prioritasList[2].toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K4')),
-                                    DataCell(Text(controller.jmlnilaiList[0][3].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[1][3].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[2][3].toString())),
-                                    DataCell(Text(controller.jmlnilaiList[3][3].toString())),
-                                    DataCell(Text((controller.jmlnilaiList[0][3]+controller.jmlnilaiList[1][3]+controller.jmlnilaiList[2][3]+controller.jmlnilaiList[3][3]).toString())),
-                                    DataCell(Text(controller.prioritasList[3].toString())),
-                                  ]),
-                                ]
-                              ),
                             ),
                           ),
                         )),
@@ -223,76 +368,148 @@ class PerhitunganView extends StatelessWidget {
                             margin: const EdgeInsets.all(20),
                             child: Card(
                               child: DataTable2(
-                                headingRowColor:
-                                    MaterialStateProperty.resolveWith((states) {
-                                  return Colors.black;
-                                }),
-                                headingTextStyle:
-                                    const TextStyle(color: Colors.white),
-                                columnSpacing: 2,
-                                horizontalMargin: 10,
-                                fixedLeftColumns: 1,
-                                minWidth: 600,
-                                columns: const [
-                                  DataColumn2(
-                                      label: Text('Kriteria.'), fixedWidth: 80),
-                                  DataColumn2(
-                                    label: Text('K1'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K2'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K3'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('K4'),
-                                    fixedWidth: 50,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('Jumlah'),
-                                    fixedWidth: 80,
-                                  ),
-                                ],
-                                rows:[
-                                  DataRow(cells: [
-                                    const DataCell(Text('K1')),
-                                    DataCell(Text(controller.eigenList[0][0].toString())),
-                                    DataCell(Text(controller.eigenList[1][0].toString())),
-                                    DataCell(Text(controller.eigenList[2][0].toString())),
-                                    DataCell(Text(controller.eigenList[3][0].toString())),
-                                    DataCell(Text((controller.eigenList[0][0]+controller.eigenList[1][0]+controller.eigenList[2][0]+controller.eigenList[3][0]).toString())),
-
+                                  headingRowColor:
+                                      MaterialStateProperty.resolveWith(
+                                          (states) {
+                                    return Colors.black;
+                                  }),
+                                  headingTextStyle:
+                                      const TextStyle(color: Colors.white),
+                                  columnSpacing: 2,
+                                  horizontalMargin: 10,
+                                  fixedLeftColumns: 1,
+                                  minWidth: 600,
+                                  columns: const [
+                                    DataColumn2(
+                                        label: Text('Kriteria.'),
+                                        fixedWidth: 70),
+                                    DataColumn2(
+                                      label: Text('K1'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K2'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K3'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K4'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('K5'),
+                                      fixedWidth: 50,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('Jumlah'),
+                                      fixedWidth: 80,
+                                    ),
+                                  ],
+                                  rows: [
+                                    DataRow(cells: [
+                                      const DataCell(Text('K1')),
+                                      DataCell(Text(controller.eigenList[0][0]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[1][0]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[2][0]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[3][0]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[4][0]
+                                          .toString())),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [0] +
+                                              controller.eigenList[1][0] +
+                                              controller.eigenList[2][0] +
+                                              controller.eigenList[3][0] +
+                                              controller.eigenList[4][0])
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K2')),
+                                      DataCell(Text(controller.eigenList[0][1]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[1][1]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[2][1]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[3][1]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[4][1]
+                                          .toString())),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [1] +
+                                              controller.eigenList[1][1] +
+                                              controller.eigenList[2][1] +
+                                              controller.eigenList[3][1] +
+                                              controller.eigenList[4][1])
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K3')),
+                                      DataCell(Text(controller.eigenList[0][2]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[1][2]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[2][2]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[3][2]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[4][2]
+                                          .toString())),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [2] +
+                                              controller.eigenList[1][2] +
+                                              controller.eigenList[2][2] +
+                                              controller.eigenList[3][2] +
+                                              controller.eigenList[4][2])
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K4')),
+                                      DataCell(Text(controller.eigenList[0][3]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[1][3]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[2][3]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[3][3]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[4][3]
+                                          .toString())),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [3] +
+                                              controller.eigenList[1][3] +
+                                              controller.eigenList[2][3] +
+                                              controller.eigenList[3][3] +
+                                              controller.eigenList[4][3])
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K5')),
+                                      DataCell(Text(controller.eigenList[0][4]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[1][4]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[2][4]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[3][4]
+                                          .toString())),
+                                      DataCell(Text(controller.eigenList[4][4]
+                                          .toString())),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [3] +
+                                              controller.eigenList[1][3] +
+                                              controller.eigenList[2][3] +
+                                              controller.eigenList[3][3] +
+                                              controller.eigenList[4][4])
+                                          .toString())),
+                                    ]),
                                   ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K2')),
-                                    DataCell(Text(controller.eigenList[0][1].toString())),
-                                    DataCell(Text(controller.eigenList[1][1].toString())),
-                                    DataCell(Text(controller.eigenList[2][1].toString())),
-                                    DataCell(Text(controller.eigenList[3][1].toString())),
-                                    DataCell(Text((controller.eigenList[0][1]+controller.eigenList[1][1]+controller.eigenList[2][1]+controller.eigenList[3][1]).toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K3')),
-                                    DataCell(Text(controller.eigenList[0][2].toString())),
-                                    DataCell(Text(controller.eigenList[1][2].toString())),
-                                    DataCell(Text(controller.eigenList[2][2].toString())),
-                                    DataCell(Text(controller.eigenList[3][2].toString())),
-                                    DataCell(Text((controller.eigenList[0][2]+controller.eigenList[1][2]+controller.eigenList[2][2]+controller.eigenList[3][2]).toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K4')),
-                                    DataCell(Text(controller.eigenList[0][3].toString())),
-                                    DataCell(Text(controller.eigenList[1][3].toString())),
-                                    DataCell(Text(controller.eigenList[2][3].toString())),
-                                    DataCell(Text(controller.eigenList[3][3].toString())),
-                                    DataCell(Text((controller.eigenList[0][3]+controller.eigenList[1][3]+controller.eigenList[2][3]+controller.eigenList[3][3]).toString())),
-                                  ]),
-                                ]
-                              ),
                             ),
                           ),
                         )),
@@ -307,68 +524,114 @@ class PerhitunganView extends StatelessWidget {
                             margin: const EdgeInsets.all(20),
                             child: Card(
                               child: DataTable2(
-                                headingRowColor:
-                                    MaterialStateProperty.resolveWith((states) {
-                                  return Colors.black;
-                                }),
-                                headingTextStyle:
-                                    const TextStyle(color: Colors.white),
-                                columnSpacing: 2,
-                                horizontalMargin: 10,
-                                // fixedLeftColumns: 1,
-                                minWidth: 260,
-                                columns: const [
-                                  DataColumn2(
-                                      label: Text('Kriteria.'), fixedWidth: 90),
-                                  DataColumn2(
-                                    label: Text('Jumlah'),
-                                    fixedWidth: 60,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('Prioritas'),
-                                    fixedWidth: 70,
-                                  ),
-                                  DataColumn2(
-                                    label: Text('Hasil'),
-                                    fixedWidth: 60,
-                                  ),
-                                ],
-                                 rows:[
-                                  DataRow(cells: [
-                                    const DataCell(Text('K1')),
-                                    DataCell(Text((controller.eigenList[0][0]+controller.eigenList[1][0]+controller.eigenList[2][0]+controller.eigenList[3][0]).toString())),
-                                    DataCell(Text(controller.prioritasList[0].toString())),
-                                    DataCell(Text(controller.konstantaList[0].toString())),
+                                  headingRowColor:
+                                      MaterialStateProperty.resolveWith(
+                                          (states) {
+                                    return Colors.black;
+                                  }),
+                                  headingTextStyle:
+                                      const TextStyle(color: Colors.white),
+                                  columnSpacing: 2,
+                                  horizontalMargin: 10,
+                                  // fixedLeftColumns: 1,
+                                  minWidth: 330,
+                                  columns: const [
+                                    DataColumn2(
+                                        label: Text('Kriteria.'),
+                                        fixedWidth: 100),
+                                    DataColumn2(
+                                      label: Text('Jumlah'),
+                                      fixedWidth: 70,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('Prioritas'),
+                                      fixedWidth: 70,
+                                    ),
+                                    DataColumn2(
+                                      label: Text('Hasil'),
+                                      fixedWidth: 60,
+                                    ),
+                                  ],
+                                  rows: [
+                                    DataRow(cells: [
+                                      const DataCell(Text('K1')),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [0] +
+                                              controller.eigenList[1][0] +
+                                              controller.eigenList[2][0] +
+                                              controller.eigenList[3][0] +
+                                              controller.eigenList[4][0])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[0]
+                                          .toString())),
+                                      DataCell(Text(controller.konstantaList[0]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K2')),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [1] +
+                                              controller.eigenList[1][1] +
+                                              controller.eigenList[2][1] +
+                                              controller.eigenList[3][1] +
+                                              controller.eigenList[4][1])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[1]
+                                          .toString())),
+                                      DataCell(Text(controller.konstantaList[1]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K3')),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [2] +
+                                              controller.eigenList[1][2] +
+                                              controller.eigenList[2][2] +
+                                              controller.eigenList[3][2] +
+                                              controller.eigenList[4][2])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[2]
+                                          .toString())),
+                                      DataCell(Text(controller.konstantaList[2]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K4')),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [3] +
+                                              controller.eigenList[1][3] +
+                                              controller.eigenList[2][3] +
+                                              controller.eigenList[3][3] +
+                                              controller.eigenList[4][3])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[3]
+                                          .toString())),
+                                      DataCell(Text(controller.konstantaList[3]
+                                          .toString())),
+                                    ]),
+                                    DataRow(cells: [
+                                      const DataCell(Text('K5')),
+                                      DataCell(Text((controller.eigenList[0]
+                                                  [4] +
+                                              controller.eigenList[1][4] +
+                                              controller.eigenList[2][4] +
+                                              controller.eigenList[3][4] +
+                                              controller.eigenList[4][4])
+                                          .toString())),
+                                      DataCell(Text(controller.prioritasList[4]
+                                          .toString())),
+                                      DataCell(Text(controller.konstantaList[4]
+                                          .toString())),
+                                    ]),
                                   ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K2')),
-                                    DataCell(Text((controller.eigenList[0][1]+controller.eigenList[1][1]+controller.eigenList[2][1]+controller.eigenList[3][1]).toString())),
-                                    DataCell(Text(controller.prioritasList[1].toString())),
-                                    DataCell(Text(controller.konstantaList[1].toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K3')),
-                                    DataCell(Text((controller.eigenList[0][2]+controller.eigenList[1][2]+controller.eigenList[2][2]+controller.eigenList[3][2]).toString())),
-                                    DataCell(Text(controller.prioritasList[2].toString())),
-                                    DataCell(Text(controller.konstantaList[2].toString())),
-                                  ]),
-                                  DataRow(cells: [
-                                    const DataCell(Text('K4')),
-                                    DataCell(Text((controller.eigenList[0][3]+controller.eigenList[1][3]+controller.eigenList[2][3]+controller.eigenList[3][3]).toString())),
-                                    DataCell(Text(controller.prioritasList[3].toString())),
-                                    DataCell(Text(controller.konstantaList[3].toString())),
-                                  ]),
-                                
-                                ]
-                              ),
                             ),
                           ),
                         )),
-                        const Text(
+                    const Text(
                       'Hasil Perangkingan',
                       style: TextStyle(fontSize: 20),
                     ),
-                        SizedBox(
+                    SizedBox(
                         height: 0.8.sh,
                         child: Center(
                           child: Container(
@@ -409,6 +672,10 @@ class PerhitunganView extends StatelessWidget {
                                     fixedWidth: 70,
                                   ),
                                   DataColumn2(
+                                    label: Text('Jarak (Km)'),
+                                    fixedWidth: 70,
+                                  ),
+                                  DataColumn2(
                                     label: Text('Rating'),
                                     fixedWidth: 70,
                                   ),
@@ -423,12 +690,15 @@ class PerhitunganView extends StatelessWidget {
                                           DataCell(Text(kost['id'].toString())),
                                           DataCell(Text(kost['name'])),
                                           DataCell(Text(kost['address'])),
-                                          DataCell(Text('${kost['price'].toString()}')),
-                                          DataCell(Text(kost['facility']
-                                              .toString())),
+                                          DataCell(Text(
+                                              '${kost['price'].toString()}')),
                                           DataCell(Text(
                                               kost['room_size'].toString())),
-                                          DataCell(Text(kost['rating'].toString())),
+                                          DataCell(Text(
+                                              kost['facility'].toString())),
+                                          DataCell(Text(kost['distance'].toString())),
+                                          DataCell(
+                                              Text(kost['rating'].toString())),
                                         ],
                                       ),
                                     )

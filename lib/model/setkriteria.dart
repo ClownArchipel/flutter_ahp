@@ -6,6 +6,7 @@ class SetKriteria {
     String k2;
     String k3;
     String k4;
+    String k5;
     DateTime? createdAt;
     DateTime? updatedAt;
 
@@ -15,6 +16,7 @@ class SetKriteria {
         required this.k2,
         required this.k3,
         required this.k4,
+        required this.k5,
          this.createdAt,
          this.updatedAt,
     });
@@ -29,6 +31,7 @@ class SetKriteria {
         k2: json["k2"],
         k3: json["k3"],
         k4: json["k4"],
+        k5: json["k5"],
         createdAt: DateTime.parse(json["created_at"]),
         updatedAt: DateTime.parse(json["updated_at"]),
     );
@@ -39,6 +42,7 @@ class SetKriteria {
         "k2": k2,
         "k3": k3,
         "k4": k4,
+        "k5": k5,
         "created_at": createdAt!.toIso8601String(),
         "updated_at": updatedAt!.toIso8601String(),
     };

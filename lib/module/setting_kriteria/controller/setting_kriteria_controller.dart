@@ -10,7 +10,7 @@ import '../view/setting_kriteria_view.dart';
 
 class SettingKriteriaController extends GetxController {
   SettingKriteriaView? view;
-  Rx<SetKriteria> data = SetKriteria(id: 0,k1: '',k2: '',k3: '',k4: '').obs;
+  Rx<SetKriteria> data = SetKriteria(id: 0,k1: '',k2: '',k3: '',k4: '',k5:'').obs;
   bool loading = true;
   @override
   void onInit() {
@@ -32,7 +32,6 @@ class SettingKriteriaController extends GetxController {
     Timer(const Duration(seconds: 1), () async {
       try {
         var response = await ApiService().getSetKriteria();
-        print(response);
         data.value = response;
         loading = false;
       } catch (error) {
@@ -47,6 +46,7 @@ class SettingKriteriaController extends GetxController {
       "k2": data.value.k2,
       "k3": data.value.k3,
       "k4": data.value.k4,
+      "k5": data.value.k5,
     };
     // print(data[1]["id"]);
     var res = await ApiService().updateSetKriteria(formData);
@@ -60,6 +60,7 @@ class SettingKriteriaController extends GetxController {
       "k2": 5,
       "k3": 3,
       "k4": 2,
+      "k5": 7,
     };
     // print(data[1]["id"]);
     var res = await ApiService().updateSetKriteria(formData);

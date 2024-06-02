@@ -45,6 +45,7 @@ class ApiService {
       'price': form["price"],
       'facility': form["facility"],
       'room_size': form["sizeRoom"],
+      'distance': form["distance"],
       'rating': form["rating"],
     });
 
@@ -73,6 +74,7 @@ class ApiService {
         'price': form["price"],
         'number_of_rooms': form["totalRoom"],
         'room_size': form["sizeRoom"],
+        'distance': form["distance"],
         'rating': form["rating"],
       });
       if (response.statusCode == 200) {

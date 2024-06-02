@@ -84,6 +84,10 @@ class MasterKriteriaView extends StatelessWidget {
                                     fixedWidth: 70,
                                   ),
                                   DataColumn2(
+                                    label: Text('Jarak (Km)'),
+                                    fixedWidth: 70,
+                                  ),
+                                  DataColumn2(
                                     label: Text('Rating'),
                                     fixedWidth: 70,
                                   ),
@@ -99,10 +103,11 @@ class MasterKriteriaView extends StatelessWidget {
                                           DataCell(Text(kost['name'])),
                                           DataCell(Text(kost['address'])),
                                           DataCell(Text('${kost['price']}')),
-                                          DataCell(Text(kost['facility']
-                                              .toString())),
                                           DataCell(Text(
                                               kost['room_size'].toString())),
+                                          DataCell(Text(kost['facility']
+                                              .toString())),
+                                          DataCell(Text('${kost['distance']}')),
                                           DataCell(Text(kost['rating'])),
                                         ],
                                       ),

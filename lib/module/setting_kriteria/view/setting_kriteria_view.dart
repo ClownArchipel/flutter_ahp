@@ -86,7 +86,8 @@ class SettingKriteriaView extends StatelessWidget {
                                             ),
                                             onChanged: (value) {
                                               value.isEmpty
-                                                  ? controller.data.value.k1 = 0.toString()
+                                                  ? controller.data.value.k1 =
+                                                      0.toString()
                                                   : controller.data.value.k1 =
                                                       value;
                                             },
@@ -133,7 +134,8 @@ class SettingKriteriaView extends StatelessWidget {
                                             ),
                                             onChanged: (value) {
                                               value.isEmpty
-                                                  ? controller.data.value.k2 = 0.toString()
+                                                  ? controller.data.value.k2 =
+                                                      0.toString()
                                                   : controller.data.value.k2 =
                                                       value;
                                             },
@@ -180,7 +182,8 @@ class SettingKriteriaView extends StatelessWidget {
                                             ),
                                             onChanged: (value) {
                                               value.isEmpty
-                                                  ? controller.data.value.k3 = 0.toString()
+                                                  ? controller.data.value.k3 =
+                                                      0.toString()
                                                   : controller.data.value.k3 =
                                                       value;
                                             },
@@ -227,8 +230,57 @@ class SettingKriteriaView extends StatelessWidget {
                                             ),
                                             onChanged: (value) {
                                               value.isEmpty
-                                                  ? controller.data.value.k4 = 0.toString()
+                                                  ? controller.data.value.k4 =
+                                                      0.toString()
                                                   : controller.data.value.k4 =
+                                                      value;
+                                            },
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 20,
+                                  ),
+                                  Text('K5: ${controller.data.value.k5}'),
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 6.0,
+                                      horizontal: 12.0,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: const BorderRadius.all(
+                                        Radius.circular(12.0),
+                                      ),
+                                      border: Border.all(
+                                        width: 1.0,
+                                        color: Colors.grey[400]!,
+                                      ),
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: TextFormField(
+                                            maxLength: 1,
+                                            keyboardType: TextInputType.number,
+                                            inputFormatters: <TextInputFormatter>[
+                                              FilteringTextInputFormatter
+                                                  .digitsOnly
+                                            ],
+                                            decoration:
+                                                const InputDecoration.collapsed(
+                                              filled: true,
+                                              fillColor: Colors.transparent,
+                                              hoverColor: Colors.transparent,
+                                              hintText: ".....",
+                                            ),
+                                            onChanged: (value) {
+                                              value.isEmpty
+                                                  ? controller.data.value.k5 =
+                                                      0.toString()
+                                                  : controller.data.value.k5 =
                                                       value;
                                             },
                                           ),
